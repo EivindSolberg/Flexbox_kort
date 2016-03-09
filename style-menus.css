@@ -1,0 +1,179 @@
+
+
+.centered {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+
+
+body,
+button,
+textarea {
+	color: #404040;
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+
+
+/* Base styles that apply to all menus */
+.menu-section {
+	padding-bottom: 2em;
+	margin-bottom: 2em;
+	border-bottom: 1px solid hsl(0, 0%, );
+}
+
+.menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	background: hsl(0, 0%, 15%);
+}
+
+.menu li a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: .6em 1em;
+}
+
+
+
+
+.menu li a:hover {
+	background: hsl(0, 0%, 25%);
+}
+
+
+@media screen and (min-width:30em){
+
+    .single-nav ul{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+
+.single-nav ul li{
+    flex: 1 0 auto; /*Strekker list items, 0 = ingen krimping av list item, auto sentrer */
+    text-align: center;
+}
+
+
+@media screen and (min-width: 52em) {
+    .centered {
+        max-width: 52em;
+    }
+}
+
+/*Ikke satt inn*/
+
+body {
+	background: hsl(0, 0%, 90%);
+}
+
+
+.card {
+	background: white;
+	margin-bottom: 2em;	
+}
+
+.card a {
+	color: black;
+	text-decoration: none;
+}
+
+.card a:hover {
+	box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+}
+
+
+.card-content {
+	padding: 1.4em;
+}
+
+.card-content h2 {
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight: normal;
+}
+
+
+
+.card-content p {
+	font-size: 95%;
+}
+
+/*slutten av det vi ikke hargjort*/
+
+
+/*--------------------------------------------------------------
+CSS Reset
+--------------------------------------------------------------*/
+
+
+
+
+
+img {
+	display: block;
+	border: 0;
+	width: 100%;
+	height: auto;
+}
+
+
+
+figure {
+	margin: 0;
+}
+
+/*Her kommer flexboxen :D */
+
+@media all and (min-width:40em) {
+
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;    
+    }
+
+    .card {
+        flex: 0 1 calc(33% - 1em);
+
+    }
+}
+
+/* Base styles that apply to all menus */
+
+/* Base styles that
+@import url('CSS/reset.css');
+@import url('CSS/accessibility.css');
+
+
+
+
+@import url('CSS/nav-advanced.css');
+@import url('CSS/nav-multi-level.css');
+@import url('CSS/nav-mixed.css');
+@import url('CSS/nav-social.css');
+
+
+
+
+@import url('CSS/masthead.css');
+
+
+@import url('CSS/nav-single-level.css');
+@import url('CSS/layout.css');
+
+@import url('CSS/typography.css');
+@import url('CSS/nav-base.css');
+
+
+/*Disse er de som utgjør en forskjell*/
+
